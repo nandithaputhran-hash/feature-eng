@@ -1,0 +1,12 @@
+Dataset provenance
+===================
+Name: Diabetes regression dataset bundled with scikit-learn
+Python loader: sklearn.datasets.load_diabetes(as_frame=True)
+Reference: https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset
+Rows: 442
+Input features: 10 numeric features
+Target: quantitative disease-progression measure
+Task: regression
+Data download required: no; the dataset is included with scikit-learn.
+
+The dataset is loaded directly by the notebook rather than duplicated as a CSV file. Values are centered/scaled by the source dataset, so some feature values are negative; a direct logarithm is therefore not generally appropriate. The notebook uses a Yeo-Johnson power transformation, which supports negative values.
